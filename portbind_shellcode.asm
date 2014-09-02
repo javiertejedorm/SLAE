@@ -79,7 +79,7 @@ _start:
 
 dup2_call:
 	inc ecx
-	push 0x3f	;syscall: 66 ()
+	push 0x3f	;syscall: 66 (dup2)
 	pop eax
 	int 0x80
 	jecxz dup2_call	
