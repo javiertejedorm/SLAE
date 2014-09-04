@@ -6,7 +6,6 @@
 	Author Javier Tejedor
 **/
 
-#include <unistd.h>
 #include <unistd.h> 
 #include <sys/socket.h>
 #include <netinet/in.h>
