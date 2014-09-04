@@ -1,8 +1,7 @@
-'''
-Author Javier Tejedor
-Date 31/08/2014
-'''
 #!/usr/bin/python
+
+#Author Javier Tejedor
+#Date 31/08/2014
 
 import sys
 import struct
