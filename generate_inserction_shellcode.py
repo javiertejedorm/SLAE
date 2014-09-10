@@ -6,6 +6,7 @@
 # http://www.securitytube-training.com/online-courses/securitytube-linux-assembly-expert/index.html
 import random
 
+# simple shellcode that launch a shell
 shellcode = ("\x31\xc0\x31\xc9\x50\x68\x62\x61\x73\x68\x68\x2f\x2f\x2f\x2f\x68\x2f\x62\x69\x6e\x89\xe3\x50\xb0\x0b\xcd\x80");
 
 encoded = ""
