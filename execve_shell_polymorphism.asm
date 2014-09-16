@@ -3,7 +3,7 @@
 ;null-free
 
 ;Polimorphism of this shellcode http://www.shell-storm.org/shellcode/files/shellcode-827.php
-;Javier Tejedor
+;Author: Javier Tejedor
 
 global _start 
  
