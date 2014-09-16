@@ -1,4 +1,4 @@
-;Title: Linux x86 - execve("/bin/bash", ["/bin/bash", "-p"], NULL) - 33 bytes
+;Title: Linux x86 - execve("/bin/bash", ["/bin/bash", "-p"], NULL) - 49 bytes
 ;Author: Javier Tejedor
 ;Polymorphic http://www.shell-storm.org/shellcode/files/shellcode-606.php
 
